@@ -13,13 +13,12 @@ require('fpdf/fpdf.php');
 
 
 
-class PDF extends FPDF
+class PDF extends FPDF {
 
 // Cargar los datos
-function LoadData($file)
-{
-    // Leer las líneas del fichero
-}
+/*function LoadData($file) {
+    echo "yeah"// Leer las líneas del fichero
+}*/
 
 function Header(){
 $title = ConfigurationData::getByPreffix("general_main_title")->val;
